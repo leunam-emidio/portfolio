@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,15 +14,15 @@
         </div>
         <nav class="navbar">
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projectos</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#contact">Contactos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div>
                 <div class="home-text">
                     <h1>Olá<span class="dot">.</span></h1>
@@ -44,7 +45,7 @@
                 </ul>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="service">
                 <div>
                     <img src="imgs/web-designing.png" class="icons" alt="">
@@ -64,7 +65,47 @@
             <div class="about-text">
                 <h2>Sobre mim</h2>
                 <p>Sou programador há cerca de 3 anos, tendo iniciado minha trajetória a partir do curso de Informática no ensino médio. Desde então, venho desenvolvendo e aprimorando minhas habilidades em programação, com foco em soluções práticas, aprendizado contínuo e evolução profissional na área de tecnologia.
-</p>
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Projectos</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-thumb" style="background:#1f3642"></div>
+                    <h3>Registration System</h3>
+                    <p>Site para fazer registro de consultas</p>
+                    <a class="btn" href="#" target="_blank">Ver projeto</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb" style="background:#25484f"></div>
+                    <h3>Calculadora</h3>
+                    <p>Calculadora simples em JavaScript</p>
+                    <a class="btn" href="#" target="_blank">Ver projeto</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb" style="background:#2a5960"></div>
+                    <h3>Redes socias</h3>
+                    <p>Redes sociais para comunicação e interação</p>
+                    <a class="btn" href="#" target="_blank">Ver projeto</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contactos</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> leunamoidime@gmail.com</p>
+                    <p><strong>Telefone:</strong> +244 924 672 777</p>
+                </div>
             </div>
         </section>
     </main>
